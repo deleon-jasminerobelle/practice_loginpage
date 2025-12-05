@@ -1,53 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="login-container">
-        <div class="login-header">
-            <h1>Welcome Back to PDMHS</h1>
-            <p>Please login to your account</p>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="login-container">
+            <div class="login-header">
+                <h1>Start your new session</h1>
+            </div>
+
+            <div class="error-message" id="errorMessage"></div>
+
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" >
+            </div>
+
+            <button class="login-btn" onclick="handleLogin()">LOG IN</button>
         </div>
 
-        <div class="error-message" id="errorMessage"></div>
-
-        <div class="form-group">
-            <label for="userType">Login As</label>
-            <select id="userType">
-                <option value="student">Student</option>
-                <option value="admin">Admin</option>
-            </select>
-        </div>
-
-        <div class="form-group">
-            <label for="username">Username</label>
-            <input type="text" id="username" placeholder="Enter your username" required>
-        </div>
-
-        <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" id="password" placeholder="Enter your password" required>
-        </div>
-
-        <div class="form-options">
-            <label class="remember-me">
-                <input type="checkbox" id="remember">
-                <span>Remember me</span>
-            </label>
-            <a href="#" class="forgot-password">Forgot Password?</a>
-        </div>
-
-        <button class="login-btn" onclick="handleLogin()">Login</button>
-
-        <div class="signup-link">
-            Don't have an account? <a href="#">Sign up</a>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
-</body>
-</html>
+        <script src="script.js"></script>
+    </body>
+    </html>
