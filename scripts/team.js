@@ -15,7 +15,7 @@ const teamMembers = {
         name: "Krislyn Francisco",
         role: "System Analyst/Developer",
         description: "Tests all features, identifies bugs, and ensures the system meets project requirements.",
-        image: ""
+        image: "../jjj.jpg"
     }
 };
 
