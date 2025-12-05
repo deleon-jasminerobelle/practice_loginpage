@@ -38,6 +38,12 @@ body {
     padding: 20px;
 }
 
+.team-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 .team-card {
     background: white;
     border-radius: 20px;
@@ -46,6 +52,30 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     animation: fadeInUp 0.8s ease;
+    height: 100%;
+    position: relative;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(255, 215, 0, 0.3);
+}
+
+.profile-action {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    color: #ffd700;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.team-card:hover .profile-action {
+    transform: translateX(5px);
 }
 
 .team-card:nth-child(1) {
@@ -78,12 +108,17 @@ body {
     border: 5px solid #fff;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     position: relative;
+    padding: 0;
 }
 
 .image-placeholder img {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
+    margin: 0;
+    padding: 0;
 }
 
 .image-placeholder::before {
@@ -119,20 +154,30 @@ body {
 
 .upload-btn {
     margin-top: 15px;
-    padding: 8px 20px;
-    background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+    padding: 10px 25px;
+    background: #f8f9fa;
     color: #333;
-    border: none;
-    border-radius: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 25px;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 150px;
 }
 
 .upload-btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 3px 10px rgba(255, 215, 0, 0.3);
+    background: #e9ecef;
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.upload-btn:active {
+    transform: translateY(0) scale(0.98);
+    box-shadow: none;
 }
 
 .file-input {

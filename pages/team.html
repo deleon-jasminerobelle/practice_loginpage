@@ -10,43 +10,46 @@
     <a href="#" class="logout-btn" onclick="logout()">Logout</a>
 
     <div class="header">
-        <h1>3nity</h1>
-        <p>Meet Our Team</p>
+        <h1>Welcome to 3nity Website</h1>
+        <p>Team Overview</p>
     </div>
 
     <div class="team-container">
-        <div class="team-card">
-            <div class="image-placeholder" id="image1">
-                <img id="img1" style="display: none;">
+        <a href="#" class="team-card-link" onclick="event.preventDefault(); window.location.href='jasmine.html';">
+            <div class="team-card">
+                <div class="image-placeholder" id="image1">
+                    <img id="img1" style="display: none;">
+                </div>
+                <h2>Jasmine Robelle De Leon</h2>
+                <div class="role">Tech Lead</div>
+                <div class="description">Oversees the entire project, ensuring all tasks are completed on time and aligned with the team's objectives.</div>
+                <div class="profile-action">View Profile →</div>
             </div>
-            <h2>Jasmine Robelle De Leon</h2>
-            <div class="role">Team Member</div>
-            <div class="description">Dedicated and passionate team member contributing to the success of Team 3nity.</div>
-            <button class="upload-btn" onclick="document.getElementById('file1').click()">Upload Photo</button>
-            <input type="file" id="file1" class="file-input" accept="image/*" onchange="handleImageUpload(event, 1)">
-        </div>
+        </a>
 
-        <div class="team-card">
-            <div class="image-placeholder" id="image2">
-                <img id="img2" style="display: none;">
+        <a href="#" class="team-card-link" onclick="event.preventDefault(); window.location.href='clarence.html';">
+            <div class="team-card">
+                <div class="image-placeholder" id="image2">
+                    <img id="img2" style="display: none;">
+                </div>
+                <h2>Clarence Villas</h2>
+                <div class="role">Project Manager</div>
+                <div class="description">Responsible for the technical direction of the project.</div>
+                <div class="profile-action">View Profile →</div>
             </div>
-            <h2>Clarence Villas</h2>
-            <div class="role">Team Member</div>
-            <div class="description">Dedicated and passionate team member contributing to the success of Team 3nity.</div>
-            <button class="upload-btn" onclick="document.getElementById('file2').click()">Upload Photo</button>
-            <input type="file" id="file2" class="file-input" accept="image/*" onchange="handleImageUpload(event, 2)">
-        </div>
+        </a>
 
-        <div class="team-card">
-            <div class="image-placeholder" id="image3">
-                <img id="img3" style="display: none;">
+        <a href="francisco.html" class="team-card-link">
+            <div class="team-card">
+                <div class="image-placeholder has-image" id="image3">
+                    <img id="img3" src="../jjj.jpg" style="display:block; width:100%; height:100%; object-fit:cover; object-position: center;">
+                </div>
+                <h2>Krislyn Francisco</h2>
+                <div class="role">System Analyst</div>
+                <div class="description">Tests all features, identifies bugs, and ensures the system meets project requirements.</div>
+                <div class="profile-action">View Profile →</div>
             </div>
-            <h2>Krislyn Francisco</h2>
-            <div class="role">Team Member</div>
-            <div class="description">Dedicated and passionate team member contributing to the success of Team 3nity.</div>
-            <button class="upload-btn" onclick="document.getElementById('file3').click()">Upload Photo</button>
-            <input type="file" id="file3" class="file-input" accept="image/*" onchange="handleImageUpload(event, 3)">
-        </div>
+        </a>
     </div>
 
     <script src="../scripts/team.js"></script>
