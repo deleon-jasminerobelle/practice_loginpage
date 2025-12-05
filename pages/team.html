@@ -7,45 +7,42 @@
     <link rel="stylesheet" href="../styles/team.css">
 </head>
 <body>
-    <a href="#" class="logout-btn" onclick="logout()">Logout</a>
-
     <div class="header">
-        <h1>3nity</h1>
-        <p>Meet Our Team</p>
+        <h1>Welcome to 3nity Website</h1>
+       
     </div>
 
     <div class="team-container">
-        <div class="team-card">
-            <div class="image-placeholder" id="image1">
-                <img id="img1" style="display: none;">
-            </div>
-            <h2>Jasmine Robelle De Leon</h2>
-            <div class="role">Team Member</div>
-            <div class="description">Dedicated and passionate team member contributing to the success of Team 3nity.</div>
-            <button class="upload-btn" onclick="document.getElementById('file1').click()">Upload Photo</button>
-            <input type="file" id="file1" class="file-input" accept="image/*" onchange="handleImageUpload(event, 1)">
-        </div>
+        <table class="team-table">
+            <thead>
+                <tr>
+                    <th>Team Members</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#" class="member-link" onclick="showMember(1); return false;">Jasmine Robelle De Leon</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#" class="member-link" onclick="showMember(2); return false;">Clarence Villas</a></td>
+             
+                </tr>
+                <tr>
+                    <td><a href="#" class="member-link" onclick="showMember(3); return false;">Krislyn Francisco</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-        <div class="team-card">
-            <div class="image-placeholder" id="image2">
-                <img id="img2" style="display: none;">
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="image-placeholder" id="modal-image">
+                <img id="modal-img" style="display: none;">
             </div>
-            <h2>Clarence Villas</h2>
-            <div class="role">Team Member</div>
-            <div class="description">Dedicated and passionate team member contributing to the success of Team 3nity.</div>
-            <button class="upload-btn" onclick="document.getElementById('file2').click()">Upload Photo</button>
-            <input type="file" id="file2" class="file-input" accept="image/*" onchange="handleImageUpload(event, 2)">
-        </div>
-
-        <div class="team-card">
-            <div class="image-placeholder" id="image3">
-                <img id="img3" style="display: none;">
-            </div>
-            <h2>Krislyn Francisco</h2>
-            <div class="role">Team Member</div>
-            <div class="description">Dedicated and passionate team member contributing to the success of Team 3nity.</div>
-            <button class="upload-btn" onclick="document.getElementById('file3').click()">Upload Photo</button>
-            <input type="file" id="file3" class="file-input" accept="image/*" onchange="handleImageUpload(event, 3)">
+            <h2 id="modal-name"></h2>
+            <div class="role" id="modal-role"></div>
+            <div class="description" id="modal-description"></div>
         </div>
     </div>
 
